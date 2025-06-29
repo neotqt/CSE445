@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ERROR (1): The root element name is "Hotel" instead of "Hotels". -->
+<Hotel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="Hotels.xsd">
+
+	<!-- Hotel from PDF: Near Phoenix (PHX) -->
+	<Hotel Rating="4.2">
+		<Name>Westin</Name>
+		<Phone>480-968-8885</Phone>
+		<Phone>800-937-8461</Phone>
+		<Address NearestAirport="Sky Habor">
+			<Number>11</Number>
+			<Street>E 7th St</Street>
+			<City>Tempe</City>
+			<State>AZ</State>
+			<Zip>85281</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 1: Near Atlanta (ATL) -->
+	<Hotel Rating="4.2">
+		<!-- ERROR (5): Two "Name" elements are provided for this hotel. -->
+		<Name>Renaissance Concourse Atlanta Airport Hotel</Name>
+		<Name>Another Name For The Same Hotel</Name>
+		<Phone>404-209-9999</Phone>
+		<Address NearestAirport="ATL">
+			<Number>1</Number>
+			<Street>Hartsfield Center Pkwy</Street>
+			<City>Atlanta</City>
+			<State>GA</State>
+			<Zip>30354</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 2: Near Los Angeles (LAX) -->
+	<!-- ERROR (2): The required "NearestAirport" attribute is missing. -->
+	<Hotel>
+		<Name>Hyatt Regency Los Angeles International Airport</Name>
+		<Phone>424-702-1234</Phone>
+		<Phone>800-233-1234</Phone>
+		<Address>
+			<Number>6225</Number>
+			<Street>W Century Blvd</Street>
+			<City>Los Angeles</City>
+			<State>CA</State>
+			<Zip>90045</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 3: Near Dallas/Fort Worth (DFW) -->
+	<Hotel Rating="4.6">
+		<Name>Grand Hyatt DFW</Name>
+		<!-- ERROR (3): The "Phone" element is missing. -->
+		<Address NearestAirport="DFW">
+			<Number>2337</Number>
+			<Street>S International Pkwy</Street>
+			<City>Dallas</City>
+			<State>TX</State>
+			<Zip>75261</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 4: Near Chicago O'Hare (ORD) -->
+	<Hotel Rating="3.8">
+		<Name>Hilton Chicago O'Hare Airport</Name>
+		<Phone>773-686-8000</Phone>
+		<!-- ERROR (4): The "Address" element has no closing tag. -->
+		<Address NearestAirport="ORD">
+			<Number>10000</Number>
+			<Street>W O'Hare Ave</Street>
+			<City>Chicago</City>
+			<State>IL</State>
+			<Zip>60666</Zip>
+		</Hotel>
+
+	<!-- Hotel 5: Near New York (JFK) -->
+	<Hotel>
+		<Name>TWA Hotel</Name>
+		<Phone>212-806-9000</Phone>
+		<Phone>212-790-3730</Phone>
+		<Address NearestAirport="JFK">
+			<Number>1</Number>
+			<Street>Idlewild Drive</Street>
+			<City>New York</City>
+			<State>NY</State>
+			<Zip>11430</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 6: Near Orlando (MCO) -->
+	<Hotel Rating="4.5">
+		<Name>Hyatt Regency Orlando International Airport</Name>
+		<Phone>407-825-1234</Phone>
+		<Address NearestAirport="MCO">
+			<Number>9300</Number>
+			<Street>Jeff Fuqua Blvd</Street>
+			<City>Orlando</City>
+			<State>FL</State>
+			<Zip>32827</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 7: Near Las Vegas (LAS) -->
+	<Hotel Rating="4.3">
+		<Name>MGM Grand</Name>
+		<Phone>877-880-0880</Phone>
+		<Address NearestAirport="LAS">
+			<Number>3799</Number>
+			<Street>S Las Vegas Blvd</Street>
+			<City>Las Vegas</City>
+			<State>NV</State>
+			<Zip>89109</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 8: Near Miami (MIA) -->
+	<Hotel>
+		<Name>Hilton Miami Airport Blue Lagoon</Name>
+		<Phone>305-262-1000</Phone>
+		<Address NearestAirport="MIA">
+			<Number>5101</Number>
+			<Street>Waterford District Dr</Street>
+			<City>Miami</City>
+			<State>FL</State>
+			<Zip>33126</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 9: Near Seattle (SEA) -->
+	<Hotel Rating="3.7">
+		<Name>Skybridge Seattle Airport Hotel</Name>
+		<Phone>206-248-1000</Phone>
+		<Address NearestAirport="SEA">
+			<Number>17338</Number>
+			<Street>International Blvd</Street>
+			<City>Seattle</City>
+			<State>WA</State>
+			<Zip>98188</Zip>
+		</Address>
+	</Hotel>
+
+	<!-- Hotel 10: Near San Francisco (SFO) -->
+	<Hotel>
+		<Name>Grand Hyatt at SFO</Name>
+		<Phone>650-452-1234</Phone>
+		<Address NearestAirport="SFO">
+			<Number>55</Number>
+			<Street>S McDonnell Rd</Street>
+			<City>San Francisco</City>
+			<State>CA</State>
+			<Zip>94128</Zip>
+		</Address>
+	</Hotel>
+
+</Hotel>
